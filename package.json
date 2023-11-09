@@ -1,18 +1,18 @@
 {
-	"name": "i18next-json-csv-converter",
-	"version": "0.2.0",
+	"name": "i18next-json-to-csv",
+	"version": "0.1.0",
 	"main": "index.js",
 	"bin": "index.js",
-	"repository": "https://github.com/andraaspar/i18next-json-csv-converter.git",
-	"author": "andraaspar",
+	"repository": "https://github.com/andraaspar/i18next-json-to-csv.git",
+	"author": "vildantursic",
 	"license": "MIT",
 	"devDependencies": {
-		"ava": "^0.25.0"
+		"ava": "^5.3.1"
 	},
 	"scripts": {
 		"test": "ava"
 	},
 	"dependencies": {
-		"diff": "^3.5.0"
+		"diff": "^5.1.0"
 	}
 }

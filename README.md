@@ -1,17 +1,17 @@
-# i18next-json-csv-converter
+# i18next-json-to-csv
 
 Converts i18next format JSON files to CSV (to be imported to Excel) and back.
 
 ## Install
 
 ```sh
-$ npm i -g i18next-json-csv-converter
+$ npm i -g i18next-json-to-csv
 ```
 
 Or with Yarn:
 
 ```sh
-$ yarn global add i18next-json-csv-converter
+$ yarn global add i18next-json-to-csv
 ```
 
 ## CLI
@@ -19,7 +19,7 @@ $ yarn global add i18next-json-csv-converter
 ### Convert JSON to CSV
 
 ```sh
-$ i18next-json-csv-converter ./en-EN.json ./en-EN.csv
+$ i18next-json-to-csv ./en.json ./en.csv
 ```
 
 ### Convert CSV to JSON
@@ -27,7 +27,7 @@ $ i18next-json-csv-converter ./en-EN.json ./en-EN.csv
 **Requirements:** Encoding must be UTF-8, separator must be comma ( , ) lines must be separated by line breaks and all fields must be quoted.
 
 ```sh
-$ i18next-json-csv-converter ./en-EN.csv ./en-EN.json
+$ i18next-json-to-csv ./en.csv ./en.json
 ```
 
 *Note: As of this writing, Excel can't export a proper CSV for this (UTF-8 issues). LibreOffice Calc can.*
@@ -35,13 +35,13 @@ $ i18next-json-csv-converter ./en-EN.csv ./en-EN.json
 ### Diff two CSV files
 
 ```sh
-$ i18next-json-csv-converter ./en-EN-old.csv ./en-EN-new.csv ./en-EN-diff.csv
+$ i18next-json-to-csv ./en-old.csv ./en-new.csv ./en-diff.csv
 ```
 
 ### Diff two CSV files and put the original labels in an extra column
 
 ```sh
-$ i18next-json-csv-converter ./en-EN-old.csv ./en-EN-new.csv ./en-EN-diff.csv ./hu-HU-new.csv
+$ i18next-json-to-csv ./en-old.csv ./en-new.csv ./en-diff.csv ./hu-HU-new.csv
 ```
 
 ## API
@@ -54,7 +54,7 @@ Takes an object parsed from JSON and outputs CSV string.
 
 Takes a CSV string and outputs an object ready for stringifying to JSON.
 
-### separator: string = '┊'
+### separator: string = '.'
 
 The separator used for separating key levels in CSV.
 

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const separator = '┊'
+const separator = '.'
 
 if (require.main === module) {
 	main()
