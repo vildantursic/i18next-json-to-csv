@@ -1,6 +1,14 @@
 # i18next-json-to-csv
 
+This library is fork of [i18next-json-csv-converter](https://github.com/andraaspar/i18next-json-csv-converter).
 Converts i18next format JSON files to CSV (to be imported to Excel) and back.
+Compared to `i18next-json-csv-converter` library, by default this version uses `.` (dot) separator in order to keep better compatibility with JSON and xlsx editing.
+
+## Updating plan
+  - Add support for namespaces
+    - export folder to single or multiple CSV files via single command
+    - import folder or single file to multiple JSON namespace(s) via single command
+  - Ability to pass separator via command
 
 ## Install
 
@@ -73,8 +81,4 @@ MIT
 
 ## Changes
 
-0.1.0 Initial version.
-
-0.1.1 Added license.
-
-0.2.0 diffCsv.
+0.1.0 Initial version (Including `export`, `import` and `diff` from forked repo).
